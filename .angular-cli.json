@@ -3,39 +3,71 @@
   "project": {
     "name": "sportly"
   },
-  "apps": [
-    {
-      "root": "src",
-      "outDir": "dist",
-      "assets": [
-        "assets",
-        "favicon.ico"
-      ],
-      "index": "index.html",
-      "main": "main.ts",
-      "polyfills": "polyfills.ts",
-      "test": "test.ts",
-      "tsconfig": "tsconfig.app.json",
-      "testTsconfig": "tsconfig.spec.json",
-      "prefix": "app",
-      "styles": [
-        "styles.css"
-      ],
-      "scripts": [],
-      "environmentSource": "environments/environment.ts",
-      "environments": {
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
-      }
+  "apps": [{
+    "root": "src",
+    "outDir": "dist",
+    "assets": [
+      "assets",
+      "favicon.ico"
+    ],
+    "index": "index.html",
+    "main": "main.ts",
+    "polyfills": "polyfills.ts",
+    "test": "test.ts",
+    "tsconfig": "tsconfig.app.json",
+    "testTsconfig": "tsconfig.spec.json",
+    "prefix": "app",
+    "styles": [
+      "./assets/plugins/owl-carousel/owl.carousel.css",
+      "./assets/plugins/owl-carousel/owl.theme.css",
+      "./assets/plugins/headereffects/css/component.css",
+      "./assets/plugins/headereffects/css/normalize.css",
+      "./assets/plugins/pace/pace-theme-flash.css",
+      "./assets/plugins/boostrapv3/css/bootstrap.min.css",
+      "./assets/plugins/boostrapv3/css/bootstrap-theme.min.css",
+      "./assets/plugins/font-awesome/css/font-awesome.min.css",
+      "./assets/css/style.2.css",
+      "./assets/css/style.3.css",
+      "./assets/css/style.css",
+      "./assets/css/nivo-lightbox/nivo-lightbox.css",
+      "./assets/css/nivo-lightbox/default.css",
+      "./assets/css/magic_space.css",
+      "./assets/css/responsive.css",
+      "./assets/css/animate.min.css",
+      "./assets/plugins/jquery-1.8.3.min.js",
+      "./assets/plugins/slider-plugin/js/slider1.min.js",
+      "./assets/plugins/slider-plugin/js/slider2.min.js",
+      "./assets/css/magnific-popup.css",
+      "./assets/plugins/slider-plugin/css/settings.css",
+      "styles.css"
+    ],
+    "scripts": [
+      "./assets/plugins/boostrapv3/js/bootstrap.min.js",
+      "./assets/plugins/pace/pace.min.js",
+      "./assets/plugins/jquery-unveil/jquery.unveil.min.js",
+      "./assets/plugins/owl-carousel/owl.carousel.min.js",
+      "./assets/plugins/waypoints.min.js",
+      "./assets/plugins/jquery-nicescroll/jquery.nicescroll.min.js",
+      "./assets/plugins/jquery-appear/jquery.appear.js",
+      "./assets/plugins/jquery-numberAnimate/jquery.animateNumbers.js",
+      "./assets/js/nivo-lightbox.js",
+      "./assets/plugins/jquery-isotope/jquery.isotope.js",
+      "./assets/js/jquery.magnific-popup.js",
+      "./assets/js/core.js",
+      "./assets/js/main.js"
+    ],
+    "environmentSource": "environments/environment.ts",
+    "environments": {
+      "dev": "environments/environment.ts",
+      "prod": "environments/environment.prod.ts"
     }
-  ],
+  }],
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"
     }
   },
-  "lint": [
-    {
+  "lint": [{
       "project": "src/tsconfig.app.json",
       "exclude": "**/node_modules/**"
     },
